@@ -1,0 +1,122 @@
+*,
+#sidebar ul,
+h5,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/docentes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-toggler-icon {
+    cursor: pointer;
+    background-image: url('../images/menu.png');
+}
+
+.navbar-toggler:hover {
+    background-color: #161616;
+    box-shadow: 0 0 4px #5a5a5a;
+}
+
+
+/*End navbar section*/
+
+#sidebar {
+    position: fixed;
+    width: 270px;
+    left: -270px;
+    height: 100%;
+    background-color: #151719;
+    transition: all 500ms linear;
+}
+
+#sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    margin: 2px;
+    list-style: none;
+}
+
+h3 {
+    padding: 3px;
+    color: white;
+    font-size: 20px;
+}
+
+h5 {
+    padding: 2px;
+    font-size: 18px;
+    color: rgba(204, 204, 204, 0.9);
+}
+
+.container-principal,
+.container-container {
+    text-align: center;
+    padding: 2px;
+    border: 2px solid #494848;
+    height: 100%;
+}
+
+.container-principal {
+    border: none;
+}
+
+.container-year {
+    border: 2px solid #494848;
+    margin-bottom: 2px;
+}
+
+.container-container-materias {
+    display: none;
+}
+
+.toogle-matery {
+    color: #f5f6fa;
+    cursor: pointer;
+    position: relative;
+}
+
+a,
+.container-year {
+    text-decoration: none;
+    color: rgba(230, 230, 230, .9);
+    cursor: pointer;
+}
+
+.container-container-matery {
+    cursor: pointer;
+    height: 20px;
+    border: 2px solid #494848;
+    height: 100%;
+}
+
+.container-container-matery:hover {
+    background-image: linear-gradient(#333333, #1a1c1d);
+    border-radius: 4px;
+}
+
+.toogle-matery::before {
+    content: "";
+    background: url("../images/arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 4px;
+    top: 5px;
+    transition: all 80ms;
+}
+
+.container-container-materias.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar.active {
+    left: 0;
+}
