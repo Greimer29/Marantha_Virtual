@@ -1,3 +1,4 @@
+//Inicio de las animaciones para la sidebar
 var togglersidebar = document.querySelector('.navbar-toggler-icon');
 togglersidebar.addEventListener('click', () => {
 
@@ -26,3 +27,4 @@ toogleMateryAll.forEach((matery) => {
     })
 
 });
+//fin
